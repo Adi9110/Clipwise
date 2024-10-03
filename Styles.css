@@ -9,8 +9,11 @@ body, html {
 }
 .frame1{
     margin-top: 0px;
-    background: url('Img/Vector\ 1.png') no-repeat center center fixed;
-    background-size: cover;
+    
+    background-image: url(Img/bg\ img.jpeg), url(Img/Vector\ 1BottomBlue.png);
+    background-position: center, bottom; 
+    background-size: contain, cover; 
+    background-repeat: no-repeat, no-repeat;
     height: 900px;
 }
 .navBarLeft{
@@ -116,7 +119,6 @@ opacity: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    border: 1px solid red;
     height: 700px;
 }
 .intro{
@@ -222,7 +224,7 @@ font-weight: 700;
 line-height: 24px;
 text-align: center;
 }
-/* The dot/bullet/indicator container */
+
 .dot-container {
     text-align: center;
     width:219px;
@@ -258,7 +260,7 @@ text-align: center;
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-/* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -281,7 +283,6 @@ text-align: center;
     height: 38px;
     margin-left: 50%;
     margin-top: 10px;
-    border:1px solid red;
   }
   .mouse{
     display: inline;
@@ -355,13 +356,16 @@ color: rgba(49, 113, 137, 1);
 }
 .best-price {
     background-color: white;
+    display: inline-block;
     width: 542px;
     height: 444px;
     margin-top: 265px;
-    margin-left: 212px;
+    margin-left: 150px;
     gap: 0px;
     border-radius: 18px 0px 0px 0px;
-opacity: 0px;   
+justify-content: right;
+right: 0px;
+align-items: right;
 }
 .best {
     font-family: Google Sans;
@@ -381,6 +385,7 @@ opacity: 0px;
     color:  rgba(49, 84, 109, 1);
 }
 .price-section {
+    display: block;
     margin-bottom: 20px;
     align-items: right;
 }
@@ -388,6 +393,8 @@ opacity: 0px;
     font-family: Google Sans;
 font-size: 24px;
 font-weight: 400;
+margin-top: 50%;
+margin-left: 100%;
 line-height: 30px;
 text-align: right;
 color: rgba(65, 160, 183, 1);
@@ -397,16 +404,19 @@ color: rgba(65, 160, 183, 1);
     font-size: 70px;
     font-weight: 700;
     line-height: 89.04px;
-    text-align: right;
+    float: right;
+    
     color: rgba(227, 91, 62, 1);
 }
 .desc {
     width: 400px;
+    display: block;
     height:96px;
     font-family: Google Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    float:right;
     text-align: right;
 }
 .best-price .buy-now-btn {
@@ -416,4 +426,56 @@ color: rgba(65, 160, 183, 1);
     padding: 10px 30px;
     text-decoration: none;
     border-radius: 5px;
+}
+.circle1{
+    width: 654px;
+height: 654px;
+margin-top: 100px;
+gap: 0px;
+border-radius: 50%;
+display: flex;
+overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+}
+.circle2{
+    width: 480px;
+    height: 480px;
+    gap: 0px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    background-color: white;
+}
+.circle3{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    display:flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    box-shadow: 2px 2px 2px 2px black;
+}
+.circ-img{
+    width: 248px;
+    height: 248px;
+}
+.price-grid{
+    display: grid;
+    background-image: url(Img/Vector\ 2.png);
+    background: linear-gradient(78.73deg, #01F0FF 5.11%, #0066FF 96.86%);
+
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.bottom{
+    height:269px;
+    background-color:rgba(10, 41, 77, 0.8);
 }
